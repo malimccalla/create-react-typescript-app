@@ -1,4 +1,7 @@
+import { DatePicker } from 'antd';
 import * as React from 'react';
+
+import 'antd/dist/antd.css';
 import './App.css';
 
 import logo from './logo.svg';
@@ -18,6 +21,7 @@ class App extends React.Component<{}, IState> {
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <DatePicker onChange={console.log} />
       </div>
     );
   }
